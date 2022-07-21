@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
   constructor() { }
    email:string=""
    password:string=""
-
+  
    print()
    {
     console.log(this.email);
@@ -20,6 +20,8 @@ export class LoginComponent implements OnInit {
    }
    
   ngOnInit(): void {
+    console.log("login Done");
+    
   }
 
 }
