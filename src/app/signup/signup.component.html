@@ -1,14 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-</head>
-<body>
-    <marquee><p>signup works!</p></marquee>
-    
-</body>
-</html>
+<div class="card text-center">
+    <div class="card-header">
+      From The People
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">"Travel is fatal to prejudice, bigotry, and narrow-mindedness.”
+        ― Mark Twain</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+  <blockquote class="blockquote text-center">
+    <p class="mb-0">Please Sign Up</p>
+  </blockquote>
+  <hr>
+
+    <div class="row">
+        <!-- <div class="col-md-3"></div> -->
+        <div class="col-md-12">
+            
+    <div class="form-group">
+        <label >FirstName </label>
+        <input [(ngModel)]="FirstName"  class="form-control">
+     </div>
+      
+      <div class="form-group">
+        <label >LastName</label>
+        <input [(ngModel)]="LastName" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label >Email </label>
+        <input [(ngModel)]="email" class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label >Password</label>
+        <input [(ngModel)]="password" class="form-control">
+      </div>
+
+    <button type="button" (click)="printData()"  class="btn btn-success">Signup</button>
+    </div> <!--col-->
+    </div> <!--row-->
 
