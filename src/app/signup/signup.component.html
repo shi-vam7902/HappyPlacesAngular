@@ -1,46 +1,106 @@
-<div class="card text-center">
-    <div class="card-header">
-      From The People
-    </div>
-    <div class="card-body">
-      <h5 class="card-title">"Travel is fatal to prejudice, bigotry, and narrow-mindedness.”
-        ― Mark Twain</h5>
-      <p class="card-text"></p>
+<!-- Section: Design Block -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<section class="text-center text-lg-start">
+  <style>
+    .cascading-right {
+      margin-right: -50px;
+    }
+
+    @media (max-width: 991.98px) {
+      .cascading-right {
+        margin-right: 0;
+      }
+      .error{
+        color: red;
+        background-color: aqua;
+      }
+    }
+  </style>
+
+  <!-- Jumbotron -->
+  <div class="container py-4 error">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+          <div class="card-body p-5 shadow-5 text-center">
+            <h2 class="fw-bold mb-5">Sign up now</h2>
+            
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline ">
+                    {{firstNameError}}
+                    <input type="text" id="form3Example1" class="form-control error" [(ngModel)]="FirstName"/>
+                    <label class="form-label" for="form3Example1">First name</label>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="form-outline">
+                    {{lastNameError}}
+                    <input type="text" id="form3Example2" class="form-control error" [(ngModel)]="LastName"/>
+                    <label class="form-label" for="form3Example2">Last name</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                {{emailError}}
+                <input type="email" id="form3Example3" class="form-control error" [(ngModel)]="email"/>
+                <label class="form-label" for="form3Example3">Email address</label>
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                {{passwordError}}
+                <input type="text" id="form3Example4" class="form-control error"  [(ngModel)]="password"/>
+                <label class="form-label" for="form3Example4">Password</label>
+              </div>
+
+              <div class="form-outline mb-4">
+                {{userTypeError}}
+                <input type="text" id="form3Example4" class="form-control error"  [(ngModel)]="userType"/>
+                <label class="form-label" for="form3Example4">Role</label>
+              </div>
+
+            
+
+              <!-- Submit button -->
+              <button type="button" (click)="signup()"  class="btn btn-success">Signup</button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+               
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-facebook-f"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-google"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-twitter"></i>
+                </button>
+
+                <button type="button" class="btn btn-link btn-floating mx-1">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <img src="https://mdbootstrap.com/img/new/ecommerce/vertical/004.jpg" class="w-100 rounded-4 shadow-4"
+          alt="" />
+      </div>
     </div>
   </div>
-  <blockquote class="blockquote text-center">
-    <p class="mb-0">Please Sign Up</p>
-  </blockquote>
-  <hr>
-
-    <div class="row">
-        <!-- <div class="col-md-3"></div> -->
-        <div class="col-md-12">
-            
-    <div class="form-group">
-        <label >FirstName </label>
-        <input [(ngModel)]="FirstName"  class="form-control">
-      {{firstNameError}}
-      </div>
-      
-      <div class="form-group">
-        <label >LastName</label>
-        <input [(ngModel)]="LastName" class="form-control">
-        {{lastNameError}}
-      </div>
-      
-      <div class="form-group">
-        <label >Email </label>
-        <input [(ngModel)]="email" class="form-control">
-        {{emailError}}
-      </div>
-      
-      <div class="form-group">
-        <label >Password</label>
-        <input [(ngModel)]="password" class="form-control">
-      </div>
-
-    <button type="button" (click)="signup()"  class="btn btn-success">Signup</button>
-    </div> <!--col-->
-    </div> <!--row-->
-
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

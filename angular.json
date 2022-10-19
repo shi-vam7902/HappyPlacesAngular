@@ -26,13 +26,25 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/favicon.ico",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/vendor.bundle.base.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/chart.js",
+              "src/assets/js/chartist.js",
+              "src/assets/js/dataTables.select.min.js",
+              "src/assets/js/jquery.cookie.js",
+              "src/assets/js/off-canva.js",
+              "src/assets/js/todolist.js",
+              "src/assets/js/vendor.bundle.base.js",
+              "src/assets/vendor/bootstrap.min.js.map",
+              "src/assets/vendor/Chart.min.js",
+            ]
           },
           "configurations": {
             "production": {
