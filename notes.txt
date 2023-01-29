@@ -1,0 +1,1 @@
+1.Creating a project -ng n ProjectName in angular

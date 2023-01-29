@@ -29,27 +29,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/favicon.ico",
-              "src/assets/css/font-awesome.min.css",
-              "src/assets/css/style.css",
-              "src/assets/css/vendor.bundle.base.css"
-            ],
+             ],
             "scripts": [
-              "src/assets/js/chart.js",
-              "src/assets/js/chartist.js",
-              "src/assets/js/dataTables.select.min.js",
-              "src/assets/js/jquery.cookie.js",
-              "src/assets/js/off-canva.js",
-              "src/assets/js/todolist.js",
-              "src/assets/js/vendor.bundle.base.js",
-              "src/assets/vendor/bootstrap.min.js.map",
-              "src/assets/vendor/Chart.min.js",
-              "src/assets/js/bootstrap.min.js", 
-              "src/assets/js/google-map.js" ,
-              "src/assets/js/jquery.easing.1..3.js",
-              "src/assets/js/jquery.min.js",       
-              "src/assets/js/main.js",
-              "src/assets/js/owl.carousel.min.js"
+             
             ]
           },
           "configurations": {
